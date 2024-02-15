@@ -1,3 +1,13 @@
+@keyframes loading {
+    from {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
 .contact {
     width: 100%;
     padding: 0 15%;
@@ -85,6 +95,7 @@
     font-size: 16px;
 }
 
+
 .form-area {
     margin-top: 12px;
     background-color: var(--clr-secondary);
@@ -103,6 +114,10 @@
     max-height: 200px;
 }
 
+.invalid {
+    border-bottom: 2px solid var(--clr-error);
+}
+
 .form-action {
     grid-area: 3 / 1 / 4 / 2;
     margin-top: 12px;
@@ -117,4 +132,22 @@
     cursor: pointer;
     border: none;
     outline: none;
+    position: relative;
+}
+
+.error-message {
+    font-size: 14px;
+    color: var(--clr-error);
+    padding: 4px;
+}
+
+.disabled {
+    opacity: .5;
+}
+
+.loading {
+    animation: loading 2s linear infinite;
+    position: absolute;
+    right: -48px;
+    top: 6px;
 }

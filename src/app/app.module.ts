@@ -9,6 +9,7 @@ import { TechComponent } from './views/tech/tech.component';
 import { ProjectComponent } from './views/project/project.component';
 import { ContactComponent } from './views/contact/contact.component';
 import { FooterComponent } from './views/footer/footer.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { FooterComponent } from './views/footer/footer.component';
     FooterComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

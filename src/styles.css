@@ -10,6 +10,7 @@
     --clr-accent : #A855F7;
     --clr-grey : #B2BECD;
     --clr-white : #FFFFFF;
+    --clr-error : #f75555;
 }
 
 @font-face {
