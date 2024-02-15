@@ -1,0 +1,24 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --clr-main : #12181B;
+    --clr-secondary : #1D2432;
+    --clr-accent : #A855F7;
+    --clr-grey : #B2BECD;
+    --clr-white : #FFFFFF;
+}
+
+@font-face {
+    font-family: Kanit;
+    src: url(./assets//Kanit/Kanit-Regular.ttf);
+}
+
+body {
+    font-family: Kanit;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, var(--clr-main), var(--clr-secondary));
+}

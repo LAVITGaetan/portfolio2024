@@ -1,0 +1,31 @@
+.tech {
+    width: 100%;
+    padding: 0 15%;
+    margin-bottom: 48px;
+}
+
+.tech-title {
+    font-size: 26px;
+    font-weight: 600;
+    color: var(--clr-white);
+    margin-bottom: 32px;
+    letter-spacing: 0.05em;
+}
+
+.tech-container {
+    width: 100%;
+    gap: 24px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.tech-card {
+    width: 128px;
+    height: 128px;
+    background-color: var(--clr-main);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
+}

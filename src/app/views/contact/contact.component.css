@@ -1,0 +1,120 @@
+.contact {
+    width: 100%;
+    padding: 0 15%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+    margin-bottom: 48px;
+    gap: 24px;
+}
+
+
+.contact-title {
+    font-size: 26px;
+    font-weight: 600;
+    color: var(--clr-white);
+    margin-bottom: 32px;
+    letter-spacing: 0.05em;
+}
+
+.contact-form {
+    width: 100%;
+    padding: 24px;
+    background-color: var(--clr-main);
+    position: relative;
+    border-radius: 2px;
+    position: relative;
+    box-shadow: 2px 2px 10px 1px #00000020;
+}
+
+.contact-form::after {
+    content: "";
+    width: 64px;
+    height: 64px;
+    background-color: var(--clr-accent);
+    position: absolute;
+    top: 0;
+    right: 0;
+    clip-path: circle(50% at 100% 0);
+}
+
+.contact-about {
+    padding: 24px;
+}
+
+.about-row {
+    display: flex;
+    align-items: center;
+    color: var(--clr-grey);
+    font-size: 16px;
+    margin-bottom: 24px;
+}
+
+.about-icon {
+    margin-right: 16px;
+}
+
+.form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-column-gap: 24px;
+    grid-row-gap: 24px;
+}
+
+
+.form-label {
+    font-size: 18px;
+    color: var(--clr-white);
+    font-weight: 500;
+    margin: 16px 0;
+    letter-spacing: 0.05em;
+}
+
+.form-input {
+    margin-top: 12px;
+    background-color: var(--clr-secondary);
+    height: 48px;
+    border-radius: 2px;
+    border: none;
+    border-bottom: 2px solid var(--clr-grey);
+    width: 100%;
+    outline: none;
+    padding: 12px;
+    color: var(--clr-white);
+    font-size: 16px;
+}
+
+.form-area {
+    margin-top: 12px;
+    background-color: var(--clr-secondary);
+    height: 48px;
+    border-radius: 2px;
+    border: none;
+    border-bottom: 2px solid var(--clr-grey);
+    outline: none;
+    padding: 12px;
+    color: var(--clr-white);
+    font-size: 16px;
+    min-width: 100%;
+    max-width: max-content;
+    min-height: 48px;
+    width: 100%;
+    max-height: 200px;
+}
+
+.form-action {
+    grid-area: 3 / 1 / 4 / 2;
+    margin-top: 12px;
+    width: fit-content;
+    font-size: 18px;
+    color: var(--clr-white);
+    background-color: var(--clr-accent);
+    padding: 12px 18px;
+    border-radius: 2px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
