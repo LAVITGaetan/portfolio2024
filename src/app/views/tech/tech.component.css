@@ -16,7 +16,6 @@
     width: 100%;
     gap: 24px;
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
 }
 
@@ -28,4 +27,30 @@
     align-items: center;
     justify-content: center;
     border-radius: 2px;
+    border-bottom: 2px solid var(--clr-accent);
+}
+
+
+@media screen and (max-width:1440px) {
+
+    .tech {
+        padding: 0 7%;
+    }
+}
+
+@media screen and (max-width:768px) {
+
+
+    .tech-card {
+        width: 30%;
+
+    }
+}
+@media screen and (max-width:425px) {
+
+
+    .tech-card {
+        width: 45%;
+
+    }
 }

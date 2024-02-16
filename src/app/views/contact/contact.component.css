@@ -56,12 +56,8 @@
     display: flex;
     align-items: center;
     color: var(--clr-grey);
-    font-size: 16px;
+    font-size: 18px;
     margin-bottom: 24px;
-}
-
-.about-icon {
-    margin-right: 16px;
 }
 
 .form {
@@ -150,4 +146,32 @@
     position: absolute;
     right: -48px;
     top: 6px;
+}
+
+.icon-container {
+    width: 48px;
+    height: 48px;
+    border-radius: 48px;
+    background-color: var(--clr-accent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 12px;
+}
+
+
+@media screen and (max-width:1440px) {
+    .contact {
+        padding: 0 7%;
+    }
+}
+
+
+@media screen and (max-width:768px) {
+.contact {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+            gap: 24px;
+            margin-bottom: 0;
+    }
 }

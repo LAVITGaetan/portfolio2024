@@ -17,4 +17,13 @@
     font-weight: 600;
     letter-spacing: 0.03em;
     cursor: pointer;
+    text-decoration: none;
+}
+
+
+@media screen and (max-width:1440px) {
+
+    .navbar {
+        padding: 0 7%;
+    }
 }

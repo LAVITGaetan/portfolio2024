@@ -1,60 +1,79 @@
-<div class="contact">
+<div class="contact" id="contact">
     <div class="contact-form">
         <h2 class="contact-title">Formulaire de contact</h2>
         <form class="form" [formGroup]="contactForm" (ngSubmit)="submitForm($event)">
             <div class="form-group">
                 <label class="form-label">Nom et Prénom</label>
-                <input name="fullname" [class.invalid]="contactForm.get('fullname')?.invalid && contactForm.get('fullname')?.touched"
+                <input name="fullname"
+                    [class.invalid]="contactForm.get('fullname')?.invalid && contactForm.get('fullname')?.touched"
                     type="text" class="form-input" formControlName="fullname">
-                    <span *ngIf="contactForm.get('fullname')?.errors?.['required'] && contactForm.get('fullname')?.touched"
+                <span *ngIf="contactForm.get('fullname')?.errors?.['required'] && contactForm.get('fullname')?.touched"
                     class="error-message">Champ obligatoire</span>
-                    <span *ngIf="contactForm.get('fullname')?.errors?.['minlength'] && contactForm.get('fullname')?.touched"
+                <span *ngIf="contactForm.get('fullname')?.errors?.['minlength'] && contactForm.get('fullname')?.touched"
                     class="error-message">Champ trop court</span>
             </div>
             <div class="form-group">
                 <label class="form-label">Votre email</label>
-                <input name="email" [class.invalid]="contactForm.get('email')?.invalid && contactForm.get('email')?.touched"
-                    type="text" class="form-input" formControlName="email">
+                <input name="email"
+                    [class.invalid]="contactForm.get('email')?.invalid && contactForm.get('email')?.touched" type="text"
+                    class="form-input" formControlName="email">
                 <span *ngIf="contactForm.get('email')?.errors?.['required'] && contactForm.get('email')?.touched"
                     class="error-message">Champ obligatoire</span>
-                    <span *ngIf="contactForm.get('email')?.errors?.['email'] && contactForm.get('email')?.touched"
+                <span *ngIf="contactForm.get('email')?.errors?.['email'] && contactForm.get('email')?.touched"
                     class="error-message">Format d'adresse non valide</span>
             </div>
             <div class="form-group">
                 <label class="form-label">Objet</label>
-                <input name="object" [class.invalid]="contactForm.get('object')?.invalid && contactForm.get('object')?.touched"
+                <input name="object"
+                    [class.invalid]="contactForm.get('object')?.invalid && contactForm.get('object')?.touched"
                     type="text" class="form-input" formControlName="object">
-                    <span *ngIf="contactForm.get('object')?.errors?.['required'] && contactForm.get('object')?.touched"
+                <span *ngIf="contactForm.get('object')?.errors?.['required'] && contactForm.get('object')?.touched"
                     class="error-message">Champ obligatoire</span>
-                    <span *ngIf="contactForm.get('object')?.errors?.['minlength'] && contactForm.get('object')?.touched"
+                <span *ngIf="contactForm.get('object')?.errors?.['minlength'] && contactForm.get('object')?.touched"
                     class="error-message">Champ trop court</span>
             </div>
             <div class="form-group">
                 <label class="form-label">Votre message</label>
-                <textarea name="message" [class.invalid]="contactForm.get('message')?.invalid && contactForm.get('message')?.touched"
+                <textarea name="message"
+                    [class.invalid]="contactForm.get('message')?.invalid && contactForm.get('message')?.touched"
                     class="form-area" formControlName="message"></textarea>
-                    <span *ngIf="contactForm.get('message')?.errors?.['required'] && contactForm.get('message')?.touched"
+                <span *ngIf="contactForm.get('message')?.errors?.['required'] && contactForm.get('message')?.touched"
                     class="error-message">Champ obligatoire</span>
-                    <span *ngIf="contactForm.get('message')?.errors?.['minlength'] && contactForm.get('message')?.touched"
+                <span *ngIf="contactForm.get('message')?.errors?.['minlength'] && contactForm.get('message')?.touched"
                     class="error-message">Champ trop court</span>
             </div>
 
             <div class="form-group">
                 <button [class.disabled]="!contactForm.valid" [disabled]="!contactForm.valid"
                     class="form-action">Envoyer
-                    <img *ngIf="isLoading" width="32px" height="32px" src="./assets/frontend/icon-loading.svg" alt="loading" class="loading">
+                    <img *ngIf="isLoading" width="32px" height="32px" src="./assets/frontend/icon-loading.svg"
+                        alt="loading" class="loading">
                 </button>
             </div>
         </form>
     </div>
     <div class="contact-about">
-        <div class="about-row"><img width="24px" height="24px" src="./assets/frontend/icon-location.svg" alt="adresse"
-                class="about-icon">Saint-Pierre, Ligne-Paradis 97410</div>
-        <div class="about-row"><img width="24px" height="24px" src="./assets/frontend/icon-email.svg" alt="email"
-                class="about-icon">g.lavit@gmail.com</div>
-        <div class="about-row"><img width="24px" height="24px" src="./assets/frontend/icon-phone.svg" alt="phone"
-                class="about-icon">06 93 83 28 21</div>
-        <div class="about-row"><img width="24px" height="24px" src="./assets/frontend/icon-linkedin.svg" alt="linkedin"
-                class="about-icon">LinkedIn</div>
+        <div class="about-row">
+            <div class="icon-container">
+                <img width="20px" height="20px" src="./assets/frontend/icon-location.svg" alt="adresse"
+                    class="about-icon">
+            </div>Saint-Pierre, Ligne-Paradis 97410
+        </div>
+        <div class="about-row">
+            <div class="icon-container">
+                <img width="20px" height="20px" src="./assets/frontend/icon-email.svg" alt="email" class="about-icon">
+            </div>g.lavit@gmail.com
+        </div>
+        <div class="about-row">
+            <div class="icon-container">
+                <img width="20px" height="20px" src="./assets/frontend/icon-phone.svg" alt="phone" class="about-icon">
+            </div>06 93 83 28 21
+        </div>
+        <a href="https://www.linkedin.com/in/gaetan-lavit-d-hautefort-6231241b8/" class="about-row">
+            <div class="icon-container">
+                <img width="20px" height="20px" src="./assets/frontend/icon-linkedin.svg" alt="linkedin"
+                    class="about-icon">
+            </div>LinkedIn
+        </a>
     </div>
 </div>

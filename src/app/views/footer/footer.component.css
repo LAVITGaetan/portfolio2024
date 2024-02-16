@@ -16,3 +16,12 @@
     cursor: pointer;
     margin-left: 24px;
 }
+
+
+@media screen and (max-width:1440px) {
+
+    .footer {
+        padding: 16px 7%;
+    }
+}
+

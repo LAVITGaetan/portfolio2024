@@ -54,3 +54,36 @@
     line-height: 150%;
     letter-spacing: 0.02em;
 }
+
+
+@media screen and (max-width:1440px) {
+
+    .skill {
+        padding: 0 7%;
+    }
+}
+
+
+@media screen and (max-width:768px) {
+
+    .skill {
+        padding: 0 7%;
+    }
+
+    .skill-container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        gap: 24px;
+    }
+}
+
+
+
+@media screen and (max-width:425px) {
+
+    .skill-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 24px;
+    }
+}
