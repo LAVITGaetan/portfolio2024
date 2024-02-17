@@ -86,6 +86,14 @@
         padding: 0 7%;
     }
 
+    .skill-card-name {
+        font-size: 18px;
+    }
+
+    
+    .skill-card-description {
+        font-size: 16px;
+    }
     .skill-container {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: auto;
