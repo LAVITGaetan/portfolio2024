@@ -174,4 +174,11 @@
             gap: 24px;
             margin-bottom: 0;
     }
+
+    
+.form {
+    display: grid;
+    grid-template-columns:  1fr;
+    grid-template-rows: auto;
+}
 }

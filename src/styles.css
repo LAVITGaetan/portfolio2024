@@ -18,6 +18,15 @@
     src: url(./assets//Kanit/Kanit-Regular.ttf);
 }
 
+body.light {
+    --clr-main: #fff;
+    --clr-secondary: #F6F6F9;
+    --clr-accent: #A855F7;
+    --clr-grey: #637285;
+    --clr-white: #12181B;
+    --clr-error: #f75555;
+}
+
 body {
     font-family: Kanit;
     min-height: 100vh;
