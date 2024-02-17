@@ -1,4 +1,16 @@
+@keyframes fade {
+    from {
+        transform: translateX(-20%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
 .hero {
+    animation: fade 1s;
     width: 100%;
     padding: 64px 15%;
     display: grid;
@@ -7,6 +19,7 @@
     grid-column-gap: 32px;
     grid-row-gap: 24px;
 }
+
 
 .hero-title {
     grid-area: 1 / 1 / 2 / 2;
