@@ -13,6 +13,8 @@
 }
 
 .tech-container {
+    transition: 1s;
+    opacity: 0;
     width: 100%;
     gap: 24px;
     display: flex;
@@ -20,6 +22,7 @@
 }
 
 .tech-card {
+    transition: 1s;
     width: 128px;
     height: 128px;
     background-color: var(--clr-main);
@@ -28,6 +31,15 @@
     justify-content: center;
     border-radius: 2px;
     border-bottom: 2px solid var(--clr-accent);
+    transform: scale(.1);
+}
+
+.show-animate {
+    opacity: 1;
+}
+
+.tech-card-showed {
+    transform: scale(1);
 }
 
 
@@ -46,6 +58,7 @@
 
     }
 }
+
 @media screen and (max-width:425px) {
 
 
