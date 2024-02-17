@@ -3,11 +3,13 @@
     <div class="project-container" id="project-container">
 
         <div class="project-card">
+            <img (click)="showDemo('hv_UMDVr7c4?si=sQjtcZDJ6vwxYUeB')" width="48px" height="48px"
+                src="./assets/frontend/icon-youtube.svg" alt="demo" class="project-card-demo">
             <div class="project-card-header" id="header-syndicat">
-                
+
             </div>
-            <h3 class="project-card-name">Dashboard - Syndicat</h3>
-            <p class="project-card-description">Tableau de bord pour gérer et administrer un syndicat et l'ensemble de ses adhérents et mandataires.</p>
+            <h3 class="project-card-name">Dictionnaire en ligne</h3>
+            <p class="project-card-description">Application utilisant une api afin d' afficher les données liées à un mot (phonétique, définitions etc)</p>
             <div class="project-card-tags">
                 <div class="project-card-tag">Angular</div>
                 <div class="project-card-tag">Firebase</div>
@@ -15,10 +17,11 @@
         </div>
         <div class="project-card">
             <div class="project-card-header" id="header-sushi">
-                
+
             </div>
             <h3 class="project-card-name">Réservation de sushis</h3>
-            <p class="project-card-description">Site de commande réalisé pour le Quai des Mers. Mise en avant des produits.</p>
+            <p class="project-card-description">Site de commande réalisé pour le Quai des Mers. Mise en avant des
+                produits.</p>
             <div class="project-card-tags">
                 <div class="project-card-tag">Angular</div>
                 <div class="project-card-tag">Firebase</div>
@@ -26,10 +29,12 @@
         </div>
         <div class="project-card">
             <div class="project-card-header" id="header-location">
-                
+
             </div>
-            <h3 class="project-card-name">Location pour bivouac</h3>
-            <p class="project-card-description">Application réalisée pour découvrir les bases d'angular et de firebase.</p>
+            <h3 class="project-card-name">Tableau de bord - Syndicat</h3>
+            <p class="project-card-description">Tableau de bord pour gérer et administrer un syndicat et l'ensemble de
+                ses adhérents et mandataires.
+            </p>
             <div class="project-card-tags">
                 <div class="project-card-tag">Angular</div>
                 <div class="project-card-tag">Firebase</div>
@@ -37,3 +42,7 @@
         </div>
     </div>
 </div>
+<div (click)="closeDemo()" *ngIf="demoIsShowed" class="demo-close">Fermer le lecteur</div>
+<iframe *ngIf="demoIsShowed" id="demo" [src]="setUrl()" title="YouTube video player" frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowfullscreen></iframe>
