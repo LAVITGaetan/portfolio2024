@@ -78,7 +78,10 @@
 
 
 @media screen and (max-width:768px) {
-
+    .skill-title {
+        font-size: 22px;
+        margin-bottom: 24px;
+    }
     .skill {
         padding: 0 7%;
     }

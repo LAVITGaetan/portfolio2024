@@ -157,6 +157,27 @@
 
 
 @media screen and (max-width:768px) {
+    
+.demo-close {
+    width: 100%;
+}
+
+#demo {
+    width: 100%;
+}
+.project-title {
+    font-size: 22px;
+    margin-bottom: 24px;
+}
+
+.project-card-name {
+    font-size: 18px;
+}
+
+
+.project-card-description {
+    font-size: 16px;
+}
     .project-container {
         grid-template-columns: 1fr;
         grid-template-rows: auto;

@@ -62,7 +62,10 @@
 }
 
 @media screen and (max-width:768px) {
-
+    .tech-title {
+        font-size: 22px;
+        margin-bottom: 24px;
+    }
 
     .tech-card {
         width: 30%;
