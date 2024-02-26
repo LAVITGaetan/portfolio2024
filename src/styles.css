@@ -7,7 +7,7 @@
 :root {
     --clr-main: #12181B;
     --clr-secondary: #1D2432;
-    --clr-accent: #A855F7;
+    --clr-accent: #7F51F0;
     --clr-grey: #B2BECD;
     --clr-white: #FFFFFF;
     --clr-error: #f75555;
@@ -21,7 +21,7 @@
 body.light {
     --clr-main: #fff;
     --clr-secondary: #F6F6F9;
-    --clr-accent: #A855F7;
+    --clr-accent: #7F51F0;
     --clr-grey: #637285;
     --clr-white: #12181B;
     --clr-error: #f75555;
