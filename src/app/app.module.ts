@@ -10,6 +10,7 @@ import { ProjectComponent } from './views/project/project.component';
 import { ContactComponent } from './views/contact/contact.component';
 import { FooterComponent } from './views/footer/footer.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { TopbarComponent } from './topbar/topbar.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     TechComponent,
     ProjectComponent,
     ContactComponent,
-    FooterComponent
+    FooterComponent,
+    TopbarComponent
   ],
   imports: [
     BrowserModule,

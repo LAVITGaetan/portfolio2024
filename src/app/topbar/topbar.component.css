@@ -1,0 +1,17 @@
+.topbar {
+    width: 100%;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--clr-accent);
+    gap:24px;
+}
+
+.topbar-button {
+    padding: 8px 12px;
+    border: 2px solid white;
+    color: white;
+    display: block;
+
+}
